@@ -1,0 +1,188 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    background-color: aquamarine;
+}
+.navbar{
+    padding: 10px 0;
+    background: rgb(142, 181, 184);
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    color: rgb(88, 83, 83);
+    font-size: 35px;
+    font-weight: 600;
+}
+.navbar .logo a span{
+    color: crimson;
+    transition: all 0.3s ease;
+}
+.navbar.sticky .logo a span{
+    color: #fff;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    display: block;
+    color: rgb(5, 5, 5);
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+.navbar .menu li a:hover{
+    color: crimson;
+}
+.navbar.sticky .menu li a:hover{
+    color: rgb(8, 8, 8);
+}
+
+
+/* home section styling */
+.home{
+    display: flex;
+    background: url("img/B.png") no-repeat center;
+    height: 100vh;
+    color: rgb(17, 18, 19);
+    
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+}
+.home .max-width{
+  width: 100%;
+  display: flex;
+}
+.home .max-width .row{
+  margin-right: 0;
+}
+.home .home-content .text-1{
+    font-size: 27px;
+
+}
+.home .home-content .text-2{
+    font-size: 55px;
+    font-weight: 100;
+    margin-left: -3px;
+}
+.home .home-content .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+}
+.home .home-content .text-3 span{
+    color: rgb(15, 15, 15);
+    font-weight: 500;
+}
+.home .home-content a{
+    display: inline-block;
+    background: crimson;
+    color: rgb(10, 10, 10);
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    font-weight: 400;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.home .home-content a:hover{
+    color: crimson;
+    background: none;
+}
+/* search  */
+.search-wrapper{
+    width: 60%;
+    margin: auto;
+    min-width:300px;
+    height: 3.5rem;
+    position: relative;
+    cursor:pointer;
+
+}
+.search-box{
+    width: 100%;
+    position: absolute;
+    background-color:rgb(197, 133, 133);
+    box-shadow: rgba(2,11, 20, 0.2) 0px 5px 15px;
+    top: -45%;
+    height: 100%;
+    width: 100%;
+    cursor:pointer;
+
+}
+.search-card{
+    display: flex;
+    justify-content:space-between;
+    height: 100%;
+    padding: 0.1rem;
+    cursor:pointer;
+
+}
+.search-input{
+    height: 100%;
+    width: 100%;
+    border: none;
+    padding:1.5rem ;
+    cursor:pointer;
+
+}
+.search-button{
+    width: 200px;
+    background-color:blue;
+    border: none;
+    color:rgb(23, 192, 204);
+    cursor: pointer;
+
+}
+/* filret-box start */
+.filter-box{
+   width: 100%;
+   height: auto;
+   font-size: 0.8rem;
+   width: 60%;
+   min-width:300px;
+   margin: auto;
+}
+.filter-dropdown{
+    width: 100%;
+    border-bottom: 1px solid var(rgb(230, 107, 107));
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    
+}
+.filter-select{
+    border: none;
+    padding: 0.2rem;
+}
+.filter-select:hover{
+    background: var(#000);
+}
+.filter-chosen{
+    width: 100%;
+    padding: 0.3rem 0;
+    display:flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+}
+.chosen-card{
+    background:rgb(13, 14, 13);
+    padding: 0.2rem 0.5rem;
+    border-radius: 20px;
+    color: #fff;
+    cursor:pointer;
+}
+/* job-list */
+
